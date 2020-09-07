@@ -21,18 +21,7 @@ public class tela extends javax.swing.JFrame {
         
          // TODO add your handling code here:
         
-        //valor de cada pacote 
-      Integer pacote01 = 100 * 5000  ;
-      Integer pacote02 = 500 * 5000  ;
-      Integer pacote03 = 1000 * 5000  ;
-       
-      //valor da manutenção comum 
-      Integer valorReal = 12000;
       
-      //diferença de valor
-      Integer economia01 =  valorReal - pacote01;
-      Integer economia02 =  valorReal - pacote02;
-      Integer economia03 =  valorReal - pacote03;
       
       //porcentagem
     }
@@ -57,8 +46,10 @@ public class tela extends javax.swing.JFrame {
         lbTextoP3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(204, 204, 255));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        bntPacote1.setBackground(new java.awt.Color(0, 255, 255));
+        bntPacote1.setBackground(new java.awt.Color(51, 153, 255));
         bntPacote1.setText("calcular");
         bntPacote1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,7 +83,7 @@ public class tela extends javax.swing.JFrame {
         jLabel2.setText("Selecione abaixo o pacote escolhido:");
 
         lbTextoP1.setBackground(new java.awt.Color(51, 51, 51));
-        lbTextoP1.setForeground(new java.awt.Color(0, 255, 255));
+        lbTextoP1.setForeground(new java.awt.Color(51, 153, 255));
         lbTextoP1.setText("Pacote 01 -  100 transformadores.................................................................................");
 
         lbTextoP2.setForeground(new java.awt.Color(0, 102, 255));
@@ -166,7 +157,7 @@ public class tela extends javax.swing.JFrame {
          Double porcentagem01 = (economia01 /valorReal) *100;
          Double economiaMes = economia01/ 12;
          Double porcentagemMes = (economiaMes/ valorReal )* 100;
-        lbTexto.setText(String.format("\f total R$:%.2f assim ira economizar R$:%.2f / %.2f%% em um ano %.2f / %.2f%% por mes. \f", pacote01, economia01, porcentagem01, economiaMes, porcentagemMes));
+        lbTexto.setText(String.format("\f total R$:%.2f assim ira economizar R$:%.2f / %.2f%% em um ano %.2f / %.2f%% e por mes. \f", pacote01, economia01, porcentagem01, economiaMes, porcentagemMes));
         lbTextoP1.setForeground(Color.red);
         lbTextoP2.setForeground(Color.blue);
         lbTextoP3.setForeground(Color.blue);
@@ -180,7 +171,7 @@ public class tela extends javax.swing.JFrame {
          Double porcentagem02 = (economia02 /valorReal) *100;
          Double economiaMes2 = economia02/ 12;
          Double porcentagemMes2 = (economiaMes2/ valorReal )* 100;
-        lbTexto.setText(String.format("\f total R$:%.2f assim ira economizar R$:%.2f / %.2f%% em um ano %.2f / %.2f%% por mes. \f", pacote02, economia02, porcentagem02,economiaMes2, porcentagemMes2));
+        lbTexto.setText(String.format("\f total R$:%.2f assim ira economizar R$:%.2f / %.2f%% em um ano %.2f / %.2f%% e por mes. \f", pacote02, economia02, porcentagem02,economiaMes2, porcentagemMes2));
         lbTextoP2.setForeground(Color.red);
         lbTextoP1.setForeground(Color.blue);
         lbTextoP3.setForeground(Color.blue);
@@ -194,7 +185,7 @@ public class tela extends javax.swing.JFrame {
          Double porcentagem03 = (economia03 /valorReal) *100;
          Double economiaMes3 = economia03/ 12;
          Double porcentagemMes3 = (economiaMes3/ valorReal )* 100;
-        lbTexto.setText(String.format("\f total R$:%.2f assim ira economizar R$:%.2f / %.2f%% em um ano %.2f / %.2f%% por mes. \f", pacote03, economia03, porcentagem03,economiaMes3, porcentagemMes3));
+        lbTexto.setText(String.format("\f total R$:%.2f assim ira economizar R$:%.2f / %.2f%% em um ano %.2f / %.2f%% e por mes. \f", pacote03, economia03, porcentagem03,economiaMes3, porcentagemMes3));
         lbTextoP3.setForeground(Color.red);
         lbTextoP2.setForeground(Color.blue);
         lbTextoP1.setForeground(Color.blue);
